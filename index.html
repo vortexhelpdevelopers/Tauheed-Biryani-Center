@@ -1,0 +1,1202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tauheed Biryani Center | Karachi</title>
+<meta name="description" content="Tauheed Biryani Center — Karachi">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --bg:#0b0907;
+  --panel:#15110d;
+  --panel2:#1d1711;
+  --gold:#d8a64e;
+  --gold2:#f0c56b;
+  --cream:#fff7e8;
+  --muted:#c5b8a4;
+  --line:rgba(240,197,107,.16);
+}
+
+*{
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:"DM Sans",sans-serif;
+  background:var(--bg);
+  color:var(--cream);
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+.container{
+  width:min(1120px,92%);
+  margin:auto;
+}
+
+/* HEADER */
+
+.header{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(11,9,7,.92);
+  backdrop-filter:blur(16px);
+  border-bottom:1px solid var(--line);
+}
+
+.nav{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  font-weight:800;
+}
+
+.logo-mark{
+  width:43px;
+  height:43px;
+  border-radius:14px;
+  background:linear-gradient(135deg,var(--gold),#8d5d1c);
+  display:grid;
+  place-items:center;
+  color:#140d05;
+  font-family:"Playfair Display",serif;
+  font-size:23px;
+}
+
+.logo span{
+  font-size:16px;
+}
+
+.navlinks{
+  display:flex;
+  gap:26px;
+  color:#d9cbb6;
+  font-size:14px;
+}
+
+.navlinks a:hover{
+  color:var(--gold2);
+}
+
+.nav-btn{
+  padding:11px 17px;
+  border:1px solid rgba(240,197,107,.35);
+  border-radius:999px;
+  color:var(--gold2);
+  font-weight:700;
+  font-size:13px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:650px;
+  display:grid;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+  background:
+  radial-gradient(circle at 78% 38%,rgba(216,166,78,.20),transparent 34%),
+  radial-gradient(circle at 10% 90%,rgba(216,166,78,.08),transparent 30%);
+}
+
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(11,9,7,.98) 0%,
+    rgba(11,9,7,.82) 48%,
+    rgba(11,9,7,.25) 100%
+  );
+}
+
+.hero-inner{
+  position:relative;
+  padding:95px 0 90px;
+  max-width:760px;
+}
+
+.eyebrow{
+  color:var(--gold2);
+  font-size:12px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  font-weight:800;
+  margin-bottom:18px;
+}
+
+h1{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(48px,8vw,86px);
+  line-height:.98;
+  letter-spacing:-2px;
+  margin-bottom:22px;
+}
+
+.hero p{
+  font-size:18px;
+  color:#d2c5b2;
+  max-width:650px;
+}
+
+.actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:14px 20px;
+  border-radius:12px;
+  font-weight:800;
+  font-size:14px;
+}
+
+.btn-gold{
+  background:var(--gold);
+  color:#160f08;
+  box-shadow:0 12px 30px rgba(216,166,78,.18);
+}
+
+.btn-dark{
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.035);
+  color:var(--cream);
+}
+
+/* INFO */
+
+.info{
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  background:var(--panel);
+}
+
+.info-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+}
+
+.info-item{
+  padding:22px 20px;
+  border-right:1px solid var(--line);
+}
+
+.info-item:last-child{
+  border-right:0;
+}
+
+.info-label{
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.8px;
+  color:var(--gold2);
+  font-weight:800;
+}
+
+.info-value{
+  margin-top:4px;
+  color:#eee0cb;
+  font-weight:600;
+}
+
+/* SECTIONS */
+
+section{
+  padding:95px 0;
+}
+
+.section-head{
+  max-width:680px;
+  margin-bottom:42px;
+}
+
+.kicker{
+  color:var(--gold2);
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:2.5px;
+  font-weight:800;
+  margin-bottom:10px;
+}
+
+h2{
+  font-family:"Playfair Display",serif;
+  font-size:clamp(34px,5vw,52px);
+  line-height:1.05;
+  margin-bottom:15px;
+}
+
+.section-head p{
+  color:var(--muted);
+}
+
+/* ABOUT */
+
+.about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:55px;
+  align-items:center;
+}
+
+.about-card{
+  background:linear-gradient(145deg,#1b150f,#100d09);
+  border:1px solid var(--line);
+  border-radius:26px;
+  padding:34px;
+}
+
+.about-card .big{
+  font-family:"Playfair Display",serif;
+  font-size:52px;
+  color:var(--gold2);
+  line-height:1;
+}
+
+.about-card p{
+  color:var(--muted);
+  margin-top:14px;
+}
+
+/* MENU */
+
+.story{
+  background:var(--panel);
+}
+
+.menu-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.menu-card{
+  background:#110e0b;
+  border:1px solid var(--line);
+  border-radius:20px;
+  padding:23px;
+  transition:.2s;
+}
+
+.menu-card:hover{
+  transform:translateY(-3px);
+  border-color:rgba(240,197,107,.32);
+}
+
+.menu-top{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  align-items:start;
+}
+
+.menu-card h3{
+  font-family:"Playfair Display",serif;
+  font-size:23px;
+}
+
+.price{
+  color:var(--gold2);
+  font-weight:800;
+  white-space:nowrap;
+}
+
+.menu-card p{
+  color:var(--muted);
+  font-size:14px;
+  margin-top:8px;
+}
+
+/* DEALS */
+
+.deals{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:16px;
+}
+
+.deal{
+  padding:23px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#21170c,#15100a);
+  border:1px solid rgba(216,166,78,.24);
+}
+
+.deal small{
+  color:var(--gold2);
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+}
+
+.deal h3{
+  margin:6px 0 4px;
+  font-family:"Playfair Display",serif;
+  font-size:22px;
+}
+
+.deal p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* FEATURES */
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+
+.feature{
+  padding:27px;
+  background:#110e0b;
+  border:1px solid var(--line);
+  border-radius:20px;
+}
+
+.icon{
+  width:43px;
+  height:43px;
+  border-radius:13px;
+  background:rgba(216,166,78,.12);
+  display:grid;
+  place-items:center;
+  color:var(--gold2);
+  font-size:20px;
+  margin-bottom:16px;
+}
+
+.feature h3{
+  font-size:18px;
+  margin-bottom:6px;
+}
+
+.feature p{
+  font-size:14px;
+  color:var(--muted);
+}
+
+/* LOCATION */
+
+.location{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+
+.loc-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:30px;
+}
+
+.loc-row{
+  padding:17px 0;
+  border-bottom:1px solid var(--line);
+}
+
+.loc-row:last-child{
+  border-bottom:0;
+}
+
+.loc-row span{
+  display:block;
+  color:var(--gold2);
+  font-size:11px;
+  text-transform:uppercase;
+  letter-spacing:1.5px;
+  font-weight:800;
+}
+
+.loc-row strong{
+  display:block;
+  margin-top:3px;
+}
+
+/* CTA */
+
+.cta{
+  padding:70px 0;
+  background:linear-gradient(135deg,#22170b,#0d0b08);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+.cta-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.cta p{
+  color:var(--muted);
+  max-width:620px;
+  margin-top:9px;
+}
+
+/* FOOTER */
+
+footer{
+  padding:28px 0;
+  color:#998d7d;
+  font-size:13px;
+}
+
+.footer-inner{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  align-items:center;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .hero{
+    min-height:590px;
+  }
+
+  .about,
+  .location{
+    grid-template-columns:1fr;
+  }
+
+  .menu-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .cta-inner{
+    display:block;
+  }
+
+  .cta .btn{
+    margin-top:20px;
+  }
+}
+
+@media(max-width:560px){
+
+  .nav{
+    height:68px;
+  }
+
+  .nav-btn{
+    padding:9px 13px;
+  }
+
+  .hero-inner{
+    padding:75px 0;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  section{
+    padding:70px 0;
+  }
+
+  .info-grid{
+    grid-template-columns:1fr;
+  }
+
+  .info-item{
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+
+  .info-item:last-child{
+    border-bottom:0;
+  }
+
+  .menu-grid,
+  .deals,
+  .features{
+    grid-template-columns:1fr;
+  }
+
+  h1{
+    letter-spacing:-1px;
+  }
+
+  .footer-inner{
+    display:block;
+  }
+
+  .footer-inner div+div{
+    margin-top:10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+
+    <a class="logo" href="#">
+      <div class="logo-mark">T</div>
+      <span>Tauheed Biryani Center</span>
+    </a>
+
+    <nav class="navlinks">
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#deals">Deals</a>
+      <a href="#location">Location</a>
+    </nav>
+
+    <a
+      class="nav-btn"
+      href="https://wa.me/923462480047?text=Hi%20Tauheed%20Biryani%20Center%2C%20I%27d%20like%20to%20place%20an%20order."
+      target="_blank"
+    >
+      Order Now
+    </a>
+
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+
+<section class="hero">
+
+  <div class="container hero-inner">
+
+    <div class="eyebrow">
+      DHA Phase 5 · Karachi
+    </div>
+
+    <h1>
+      Tauheed<br>
+      Biryani Center
+    </h1>
+
+    <p>
+      Authentic biryani, flavorful pulao and Pakistani favorites —
+      made for everyday meals, family orders and satisfying cravings.
+    </p>
+
+    <div class="actions">
+
+      <a
+        class="btn btn-gold"
+        href="https://wa.me/923462480047?text=Hi%20Tauheed%20Biryani%20Center%2C%20I%27d%20like%20to%20place%20an%20order."
+        target="_blank"
+      >
+        Order on WhatsApp →
+      </a>
+
+      <a class="btn btn-dark" href="#menu">
+        Explore Menu
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- INFO -->
+
+<div class="info">
+
+  <div class="container info-grid">
+
+    <div class="info-item">
+      <div class="info-label">Location</div>
+      <div class="info-value">
+        Main Tauheed Commercial Road, DHA Phase 5
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-label">Call / WhatsApp</div>
+      <div class="info-value">
+        0346 2480047
+      </div>
+    </div>
+
+    <div class="info-item">
+      <div class="info-label">Hours</div>
+      <div class="info-value">
+        Daily · 10 AM – 2 AM
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <div class="container about">
+
+    <div>
+
+      <div class="kicker">
+        About Tauheed
+      </div>
+
+      <h2>
+        A familiar Karachi favorite,
+        presented online.
+      </h2>
+
+      <p style="color:var(--muted);max-width:620px">
+
+        Tauheed Biryani Center serves Pakistani favorites from
+        its Main Tauheed Commercial Road location in DHA Phase 5,
+        Karachi.
+
+        The restaurant is known for biryani, pulao, family-size
+        orders, deals and traditional sides.
+
+      </p>
+
+      <div class="actions">
+
+        <a
+          class="btn btn-gold"
+          href="tel:+923462480047"
+        >
+          Call 0346 2480047
+        </a>
+
+        <a
+          class="btn btn-dark"
+          href="https://www.google.com/maps/search/?api=1&query=Tauheed+Biryani+Center+Main+Tauheed+Commercial+Road+Karachi"
+          target="_blank"
+        >
+          Get Directions
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="about-card">
+
+      <div class="big">
+        4.3★
+      </div>
+
+      <p>
+        Public listings show a 4.3 rating with hundreds of
+        customer reviews. Delivery and takeaway options are
+        also listed.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MENU -->
+
+<section id="menu" class="story">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        Popular Menu
+      </div>
+
+      <h2>
+        Simple food. Serious flavor.
+      </h2>
+
+      <p>
+        Selected publicly listed menu items are shown below.
+        Prices may change, so customers should confirm the
+        final amount before ordering.
+      </p>
+
+    </div>
+
+    <div class="menu-grid">
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Biryani</h3>
+          <div class="price">Rs. 415</div>
+        </div>
+
+        <p>
+          Single serving of the restaurant's biryani.
+        </p>
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Beef Biryani</h3>
+          <div class="price">Rs. 550</div>
+        </div>
+
+        <p>
+          Single serving.
+        </p>
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Chicken Pulao</h3>
+          <div class="price">Rs. 415</div>
+        </div>
+
+        <p>
+          Flavorful chicken pulao with aromatic rice and spices.
+        </p>
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Beef Pulao</h3>
+          <div class="price">Rs. 550</div>
+        </div>
+
+        <p>
+          Single serving.
+        </p>
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Kheer</h3>
+          <div class="price">Rs. 210</div>
+        </div>
+
+        <p>
+          Traditional dessert.
+        </p>
+
+      </div>
+
+
+      <div class="menu-card">
+
+        <div class="menu-top">
+          <h3>Raita & Salad</h3>
+          <div class="price">From Rs. 100</div>
+        </div>
+
+        <p>
+          Fresh sides available with meals.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- DEALS -->
+
+<section id="deals">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        Family & Combo Deals
+      </div>
+
+      <h2>
+        Made for sharing.
+      </h2>
+
+      <p>
+        Selected currently listed deals for family meals
+        and group orders.
+      </p>
+
+    </div>
+
+
+    <div class="deals">
+
+      <div class="deal">
+
+        <small>
+          Combo
+        </small>
+
+        <h3>
+          Pepsi Kombo 1 · Rs. 670
+        </h3>
+
+        <p>
+          Biryani, raita and soft drink.
+        </p>
+
+      </div>
+
+
+      <div class="deal">
+
+        <small>
+          Combo
+        </small>
+
+        <h3>
+          Pepsi Kombo 2 · Rs. 1,265
+        </h3>
+
+        <p>
+          2 biryani, 2 raita and 2 soft drinks.
+        </p>
+
+      </div>
+
+
+      <div class="deal">
+
+        <small>
+          Family Bowl
+        </small>
+
+        <h3>
+          KG Chicken Biryani · Rs. 1,265
+        </h3>
+
+        <p>
+          KG chicken biryani with 4 pieces.
+        </p>
+
+      </div>
+
+
+      <div class="deal">
+
+        <small>
+          Family Bowl
+        </small>
+
+        <h3>
+          KG Beef Biryani · Rs. 2,130
+        </h3>
+
+        <p>
+          Family-size order.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="story">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        Why Order
+      </div>
+
+      <h2>
+        Your meal, your way.
+      </h2>
+
+    </div>
+
+
+    <div class="features">
+
+      <div class="feature">
+
+        <div class="icon">
+          🍛
+        </div>
+
+        <h3>
+          Biryani & Pulao
+        </h3>
+
+        <p>
+          Choose from popular biryani and pulao options
+          for individual meals or group orders.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="icon">
+          👨‍👩‍👧‍👦
+        </div>
+
+        <h3>
+          Family Options
+        </h3>
+
+        <p>
+          KG bowls and combo deals make it easier to
+          order for multiple people.
+        </p>
+
+      </div>
+
+
+      <div class="feature">
+
+        <div class="icon">
+          📲
+        </div>
+
+        <h3>
+          Easy Ordering
+        </h3>
+
+        <p>
+          Call or message the restaurant directly to
+          place an order or confirm details.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LOCATION -->
+
+<section id="location">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <div class="kicker">
+        Visit / Contact
+      </div>
+
+      <h2>
+        Find Tauheed Biryani Center.
+      </h2>
+
+    </div>
+
+
+    <div class="location">
+
+      <div class="loc-card">
+
+        <div class="loc-row">
+
+          <span>
+            Address
+          </span>
+
+          <strong>
+            Main Tauheed Commercial Road,
+            DHA Phase 5, Shah Rasool Colony,
+            Karachi
+          </strong>
+
+        </div>
+
+
+        <div class="loc-row">
+
+          <span>
+            Phone
+          </span>
+
+          <strong>
+            0346 2480047
+          </strong>
+
+        </div>
+
+
+        <div class="loc-row">
+
+          <span>
+            Opening Hours
+          </span>
+
+          <strong>
+            Daily · 10 AM – 2 AM
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="loc-card">
+
+        <h3 style="font-family:'Playfair Display',serif;font-size:28px">
+          Ready to order?
+        </h3>
+
+        <p style="color:var(--muted);margin:10px 0 22px">
+
+          Contact Tauheed Biryani Center directly for
+          orders, availability and current prices.
+
+        </p>
+
+        <div class="actions" style="margin-top:0">
+
+          <a
+            class="btn btn-gold"
+            href="https://wa.me/923462480047?text=Hi%20Tauheed%20Biryani%20Center%2C%20I%27d%20like%20to%20place%20an%20order."
+            target="_blank"
+          >
+            WhatsApp
+          </a>
+
+          <a
+            class="btn btn-dark"
+            href="https://www.google.com/maps/search/?api=1&query=Tauheed+Biryani+Center+Main+Tauheed+Commercial+Road+Karachi"
+            target="_blank"
+          >
+            Maps
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<div class="cta">
+
+  <div class="container cta-inner">
+
+    <div>
+
+      <div class="kicker">
+        Tauheed Biryani Center
+      </div>
+
+      <h2 style="margin-bottom:0">
+        Hungry? Let's order.
+      </h2>
+
+      <p>
+        Call or message directly to check today's menu,
+        availability and order details.
+      </p>
+
+    </div>
+
+
+    <a
+      class="btn btn-gold"
+      href="https://wa.me/923462480047?text=Hi%20Tauheed%20Biryani%20Center%2C%20I%27d%20like%20to%20place%20an%20order."
+      target="_blank"
+    >
+      Order on WhatsApp →
+    </a>
+
+  </div>
+
+</div>
+
+</main>
+
+<!-- FOOTER -->
+
+<footer>
+
+  <div class="container footer-inner">
+
+    <div>
+      © 2026 Tauheed Biryani Center
+    </div>
+
+    <div>
+      Main Tauheed Commercial Road · Karachi · 0346 2480047
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
